@@ -1,0 +1,422 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="pt">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>e-fácil</title>
+
+    <link rel="shortcut icon" href="@Url.Content("~/Content/img/icones/plus.ico")" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/326bb10685.js"></script>
+
+    <!-- jQuery -->
+    <script src="@Url.Content("~/Content/js/jquery-3.3.1.min.js")"></script>
+    <script src="@Url.Content("~/Content/js/jquery.easing.min.js")"></script>
+
+    <!-- bxslider -->
+    <script src="@Url.Content("~/Content/js/jquery.bxslider.js")"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <!-- CSS e JS -->
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/css/style.css")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/css/style-responsive.css")">
+    <script src="@Url.Content("~/Content/js/scripts.js")"></script>
+
+</head>
+<body>
+
+    <!-- header -->
+    <div class="wrapper-header">
+        <div id="page-header"></div>
+        <header>
+            <a href="#" class="logo page-scroll" title="e-fácil plus"><img src="@Url.Content("~/Content/img/logos/logo.png")" alt="e-fácil plus"></a>
+            <section class="area-de-clientes">
+                <h3>Acesse o portal EfacilPlus</h3>
+                <form action="#" method="post" name="form1">
+                    <input type="text" id="login" name="login" placeholder="login" required>
+                    <input type="password" id="senha" name="senha" placeholder="senha" required>
+                    <select id="consolidadora" name="consolidadora-select">
+                        <option value="consolidadora">&gt; consolidadora &lt;</option>
+                        <option value="ancoradouro">Ancoradouro</option>
+                        <option value="grupo brt">Grupo BRT</option>
+                        <option value="pvt">PVT</option>
+                    </select>
+                    <input type="button" onclick="Consolidadora()" name="button" id="button" value="entrar">
+                </form>
+                <form name="form" action="#" method="post" Onsubmit="Logar();">
+                    <input type="hidden" name="WoobaLogin" id="WoobaLogin" value="" />
+                    <input type="hidden" name="WoobaSenha" id="WoobaSenha" value="" />
+                    <input type="hidden" name="Criptografado" value="S" />
+                </form>
+                <a href="#" title="Esqueci minha senha" onclick="EsqueciSenha()">Esqueci minha senha</a>
+            </section>
+            <div class="ac-mobile"><i class="fa fa-user fa-2x"></i></div>
+            <div class="menu-mobile"><i class="fa fa-bars fa-2x"></i></div>
+        </header>
+    </div>
+
+    <!-- menu -->
+    <div class="wrapper-menu">
+        <nav class="menu">
+            <ul>
+                <li><a class="page-scroll" href="#page-quem-somos" title="Quem Somos">Quem Somos</a></li>
+                <li><a class="page-scroll" href="#page-portal" title="Portal">Portal</a></li>
+                <li><a class="page-scroll" href="#page-area-do-agente" title="Área do Agente">Área do Agente</a></li>
+                <li><a class="page-scroll" href="#page-corporate" title="Corporate">Corporate</a></li>
+                <li><a class="page-scroll" href="#page-video-aulas" title="Vídeo Aulas">Vídeo Aulas</a></li>
+                <li><a class="page-scroll" href="#page-app" title="App">App</a></li>
+                <li><a class="page-scroll" href="#page-consolidadoras" title="Consolidadoras">Consolidadoras</a></li>
+                <li><a class="page-scroll" href="#page-seguranca" title="Segurança">Segurança</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- slider -->
+    <section class="slider">
+        <div><img src="@Url.Content("~/Content/img/slider/voar-e-facil.jpg")" alt="Voar é fácil"></div>
+        <div><img src="@Url.Content("~/Content/img/slider/o-jeito-mais-facil-de-viajar.jpg")" alt="O jeito mais fácil de viajar"></div>
+        <div><img src="@Url.Content("~/Content/img/slider/encontre-os-melhores-hoteis-aqui.jpg")" alt="Encontre os melhores hotéis aqui"></div>
+        <div><img src="@Url.Content("~/Content/img/slider/maior-oferta-de-produtos-terrestres.jpg")" alt="Maior oferta de produtos terrestres"></div>
+    </section>
+
+    <!-- quem somos -->
+    <div class="wrapper-quem-somos">
+        <div id="page-quem-somos"></div>
+        <section class="quem-somos">
+            <h2><img src="@Url.Content("~/Content/img/logos/logo-quem-somos.png")" alt="e-facil plus"></h2>
+            <p>
+                A <strong>e-fácilPlus</strong> é resultado do investimento de quatro grandes empresas do setor turístico:
+            </p>
+            <p>
+                Ancoradouro, Grupo BRT, PVT Consolidadora e Wooba. A empresa provê plataforma tecnológica completa: E-Fácil Plus, E-Fácil Plus Corporate, White Label e Wooffice Plus (back-office), além de negociações com fornecedores aéreos e não aéreos para agregar cada vez mais conteúdo de qualidade e de baixo custo para os agentes de viagens.
+            </p>
+            <p>
+                Serviços de help desk, atendimento emergencial, treinamento, faturamento, reembolso, segurança digital e datacenter complementam os nossos serviços como um verdadeiro centro de serviço compartilhado para três das maiores consolidadoras do país.
+            </p>
+            <p>
+                <strong>e-fácilPlus. é rápido. é seguro. é fácil.</strong>
+            </p>
+        </section>
+    </div>
+
+    <!-- portal -->
+    <div class="wrapper-portal">
+        <div id="page-portal"></div>
+        <section class="portal">
+            <h2><img src="@Url.Content("~/Content/img/logos/logo-portal.jpg")" alt="All in one frontoffice"></h2>
+            <p>
+                Portal online de busca, reservas e emissões de passagens aéreas nacionais e internacionais, hotelaria, seguro viagem, passagens rodoviárias e cruzeiros marítimos
+            </p>
+            <ul>
+                <li>
+                    <img src="@Url.Content("~/Content/img/icones/icone-portal-1.jpg")" alt="ícone Agilidade nas buscas e nas reservas">
+                    <span>Agilidade nas buscas e nas reservas</span>
+                </li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/icones/icone-portal-2.jpg")" alt="ícone Gerenciamento de filas 24 horas por dia através do MENTOR"><span>Gerenciamento de filas 24 horas por dia através do MENTOR</span>
+                </li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/icones/icone-portal-3.jpg")" alt="ícone Facilidade nas cotações que podem ser enviadas de diferentes formas">
+                    <span>Facilidade nas cotações que podem ser enviadas de diferentes formas</span>
+                </li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/icones/icone-portal-4.jpg")" alt="ícone Gerenciamento de suas reservas aéreas e não aéreas">
+                    <span>Gerenciamento de suas reservas aéreas e não aéreas</span>
+                </li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/icones/icone-portal-5.jpg")" alt="ícone Maior oferta de produtos terrestres: hotéis, carros e seguro">
+                    <span>Maior oferta de produtos terrestres: hotéis, carros e seguro</span>
+                </li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/icones/icone-portal-6.jpg")" alt="ícone Segurança nas emissões e em todas as transações do portal através da utilização do token">
+                    <span>Segurança nas emissões e em todas as transações do portal através da utilização do token</span>
+                </li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/icones/icone-portal-7.jpg")" alt="ícone Formulário RAV completo para a rentabilidade de sua agência">
+                    <span>Formulário RAV completo para a rentabilidade de sua agência</span>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- área do agente -->
+    <div class="wrapper-area-do-agente">
+        <div id="page-area-do-agente"></div>
+        <section class="area-do-agente">
+            <h2><img src="@Url.Content("~/Content/img/logos/logo-agente.jpg")" alt="Área do Agente"></h2>
+            <p>
+                Todo o controle das vendas de aéreo e terrestre, recebimento e visualização de faturas de boletos, pedidos e acompanhamentos de reembolso
+            </p>
+            <ul>
+                <li>
+                    <img src="@Url.Content("~/Content/img/icones/icone-portal-8.jpg")" alt="ícone Controle de vendas">
+                    <span>Controle de vendas</span>
+                </li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/icones/icone-portal-9.jpg")" alt="ícone Faturas">
+                    <span>Faturas</span>
+                </li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/icones/icone-portal-10.jpg")" alt="ícone Notas fiscais">
+                    <span>Notas fiscais</span>
+                </li>
+                <li>
+                    <img src="@Url.Content("~/Content/img/icones/icone-portal-11.jpg")" alt="ícone Reembolsos">
+                    <span>Reembolsos</span>
+                </li>
+            </ul>
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/xUQb00lclx0" allowfullscreen></iframe>
+            <span class="video-legenda">clique aqui e assista a vídeoaula</span>
+        </section>
+    </div>
+
+    <!-- corporate -->
+    <div class="wrapper-corporate">
+        <div id="page-corporate"></div>
+        <section class="corporate">
+            <h2><img src="@Url.Content("~/Content/img/logos/logo-corporate.jpg")" alt="Corporate"></h2>
+            <p>
+                Ferramenta de gestão de viagens corporativas que agiliza o processo de solicitação, economiza e controla os gastos do cliente corporativo.
+            </p>
+            <ul>
+                <li><span>Reservas e emissões online de aéreo nacional, hotéis e rodoviário</span></li>
+                <li class="corporate-2"><span>Pesquisa de passagens com e sem bagagem</span></li>
+                <li class="corporate-3"><span>Políticas de viagens e fluxo de autorização de viagens</span></li>
+                <li class="corporate-4"><span>Controle de rentabilidade de OS</span></li>
+                <li class="corporate-5"><span>Cadastro de cartões corporativos</span></li>
+                <li class="corporate-6"><span>Cadastro FEE</span></li>
+                <li class="corporate-7"><span>Programas de fidelidade</span></li>
+                <li class="corporate-8"><span>Relatório de bilhetes não voados</span></li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- vídeo aulas -->
+    <div class="wrapper-video-aulas">
+        <div id="page-video-aulas"></div>
+        <section class="video-aulas">
+            <h2><img src="@Url.Content("~/Content/img/logos/logo-video-aula.jpg")" alt="Video aulas"></h2>
+            <p>Veja aqui como é fácil utilizar nossos recursos</p>
+            <ul>
+                <li class="link-video-1"><span>Conhecendo o novo portal</span></li>
+                <li class="link-video-2"><span>Reserva Nacional</span></li>
+                <li class="link-video-3"><span>Reserva Internacional</span></li>
+                <li class="link-video-4"><span>Conhecendo a ferramenta Hotel</span></li>
+                <li class="link-video-5"><span>Seguro viagem</span></li>
+                <li class="link-video-6"><span>Área do agente</span></li>
+                <li class="link-video-7"><span>Reembolso</span></li>
+            </ul>
+            <iframe class="video-1" width="418" height="237" src="https://www.youtube.com/embed/kswZbiHOBNk" allowfullscreen></iframe>
+            <iframe class="video-2" width="418" height="237" src="https://www.youtube.com/embed/QHzVp0rViWk" allowfullscreen></iframe>
+            <iframe class="video-3" width="418" height="237" src="https://www.youtube.com/embed/rnSU78e8VWg" allowfullscreen></iframe>
+            <iframe class="video-4" width="418" height="237" src="https://www.youtube.com/embed/B05wTJDNcX4" allowfullscreen></iframe>
+            <iframe class="video-5" width="418" height="237" src="https://www.youtube.com/embed/8s_z2Exdy3M" allowfullscreen></iframe>
+            <iframe class="video-6" width="418" height="237" src="https://www.youtube.com/embed/xUQb00lclx0" allowfullscreen></iframe>
+            <iframe class="video-7" width="418" height="237" src="https://www.youtube.com/embed/3Q8m9qkBxzQ" allowfullscreen></iframe>
+        </section>
+    </div>
+
+    <!-- app -->
+    <div class="wrapper-app">
+        <div id="page-app"></div>
+        <section class="app">
+            <h2><img src="@Url.Content("~/Content/img/app/titulo-app.png")" alt="receber ofertas exclusivas é fácil. Baixe o nosso app e ative as notificações"></h2>
+            <p>
+                Receba promoções diárias, ofertas exclusivas e informações úteis sobre horários vôos, reservas e muito mais!
+            </p>
+            <div class="store">
+                <span>Disponível para</span>
+                <img src="@Url.Content("~/Content/img/app/icone-app.png")" alt="">
+                <a href="https://itunes.apple.com/br/app/e-facil-plus/id1092661265?l=en&mt=8" class="btn-apple" title="Disponível na App Store"></a>
+                <a href="https://play.google.com/store/apps/details?id=br.com.wooba.woobamobile2&hl=pt_BR" class="btn-google" title="Disponível no Google Play"></a>
+            </div>
+        </section>
+    </div>
+
+    <!-- consolidadoras -->
+    <div class="wrapper-consolidadoras">
+        <div id="page-consolidadoras"></div>
+        <section class="consolidadoras">
+            <div>
+                <h2><img src="@Url.Content("~/Content/img/logos/consolidadora-ancoradouro.png")" alt="Ancoradouro"></h2>
+                <p>
+                    A Ancoradouro foi criada em 1987 como uma operadora de cruzeiros e logo expandiu suas operações se tornando uma consolidadora de bilhetes aéreos para o Interior do Estado de São Paulo.
+                </p>
+                <p>
+                    E crescemos. Nos tornamos uma das melhores empresas do turismo brasileiro e líderes de mercado, com bases de negócios em Campinas (matriz), Ribeirão Preto, Bauru, São José dos Campos e São Paulo. Recentemente expandimos nossas operações aos estados do Rio e Espírito Santo com filiais em suas capitais. Além disso, possuímos representações, por meio de home-offices em Curitiba, Londrina, Maringá, São José do Rio Preto, Presidente Prudente, Maceió e Aracaju.
+                </p>
+                <p>
+                    Somos uma empresa sólida, consolidada no mercado de turismo há 30 anos e atuando como um intermediário facilitador do agente de viagens.
+                </p>
+                <a href="http://www.ancoradouro.com.br" target="_blank" title="ancoradouro.com.br">ancoradouro.com.br</a>
+            </div>
+            <div>
+                <h2><img src="@Url.Content("~/Content/img/logos/consolidadora-grupobrt.png")" alt="Grupo BRT"></h2>
+                <p>
+                    O Grupo BRT, fundado em 1974 sob o nome de Brementur, atua no ramo de distribuição de produtos e serviços de turismo, com atendimento voltado exclusivamente a agencias de viagens. Estamos presentes em várias cidades brasileiras, com sede em Curitiba, filiais em Maringá, Londrina, Foz do Iguaçu, Florianópolis, Natal, Fortaleza, Salvador, Bauru e Brasília, e atendimento comercial em Criciúma, Chapecó, Blumenau e Vale do Itajaí, Ribeirão Preto, São Jose do Rio Preto, Recife, João Pessoa, São Luiz, Belém e Porto Velho.
+                </p>
+                <p>
+                    Busca de passagens aéreas, sistema de self-booking, hospedagem em mais de 2.000 hotéis no Brasil ou 300.000 hotéis em todo o mundo, além de soluções para suas viagens a lazer ou a negócios, assistências de viagens, ingressos, passagens rodoviárias e produtos exclusivos de operação.
+                </p>
+                <p>
+                    Grupo BRT: tradição em qualidade, tecnologia e confiabilidade construída a mais de 40 anos.
+                </p>
+                <a href="https://www.grupobrt.com.br" target="_blank" title="grupobrt.com.br">grupobrt.com.br</a>
+            </div>
+            <div>
+                <h2><img src="@Url.Content("~/Content/img/logos/consolidadora-pvt.png")" alt="PVT"></h2>
+                <p>
+                    A PVT surgiu como consolidadora aérea para ser a opção mais prática em viagens. É especializada na distribuição de bilhetes aéreos das principais companhias nacionais e internacionais exclusivamente para agências de viagens, conta também com as opções de aluguel de carros, seguro viagem, cruzeiros e hotelaria.
+                </p>
+                <p>
+                    A PVT Consolidadora está presente nos estados de Minas Gerais, São Paulo, Rio de Janeiro, Bahia e Pernambuco.
+                </p>
+                <p>
+                    Tem como principais pilares a tradição e a confiança que só uma empresa com quase 30 anos de mercado pode oferecer. Tem por missão atender as demandas das agências de turismo com eficiência, inovação e tecnologia contando com uma equipe altamente capacitada e motivada.
+                </p>
+                <a href="http://pvt.tur.br/" target="_blank" title="pvt.tur.br">pvt.tur.br</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- segurança -->
+    <div class="wrapper-seguranca">
+        <div id="page-seguranca"></div>
+        <section class="seguranca">
+            <h2><img src="@Url.Content("~/Content/img/logos/logo-seguranca.jpg")" alt="Segurança"></h2>
+            <p>
+                Para nós a segurança da informação é tratada com prioridade. Nossos sistemas, aplicativos, infraestrutura, operações e governança seguem os mais rigorosos requisitos de compliance do mercado: PCI-DSS, ISOS 27000, 20000, 38500, entre outras. <br>
+                Para lidar com os perigos online, a <strong>e-Fácil Plus</strong> apresenta algumas dicas de segurança.
+            </p>
+            <div class="cadeado">
+                <img src="@Url.Content("~/Content/img/icones/icone-portal-12.jpg")" alt="Recomendações">
+                <p>
+                    As recomendações abaixo contemplam como o usuário deve agir para aumentar a segurança e se proteger de possíveis ameaças. <br>
+                    A <strong>e-fácilPlus</strong> ressalta que é possível atingir um nível de segurança que permita o pleno uso deste ambiente virtual, desde que tomadas medidas técnicas e boas práticas. Nossa preocupação não é apenas com a segurança da informação, mas também com relação ao serviço prestado pela empresa aos clientes, não queremos que nossos agentes de viagem corram riscos.
+                </p>
+            </div>
+            <div class="recomendacoes">
+                <ul>
+                    <li>Mantenha em seu computador um bom antivírus, sempre atualizado</li>
+                    <li>Nunca abra arquivos anexados a e-mails de pessoas ou empresas desconhecidas</li>
+                    <li>Deixe o firewall do Windows sempre ativado</li>
+                    <li>Ao acessar seu e-mail, sua conta em uma loja online, seu perfil em redes sociais, internet banking ou qualquer outro serviço que exija nome de usuário e senha, clique no botão de logout/logoff/sair/desconectar para sair do site</li>
+                    <li>Nunca instale programas piratas em seu computador, eles podem trazer vírus ou outros programas perigosos</li>
+                    <li>Crie senhas difíceis de serem descobertas</li>
+                    <li>Utilize navegadores atuais e renomados</li>
+                    <li>Sempre utilize a versão atualizada de seu navegador</li>
+                </ul>
+                <ul>
+                    <li>Tome cuidado com Downloads</li>
+                    <li>Tome cuidado com sites que pedem para você instalar programas para continuar a navegar ou para usufruir de algum serviço</li>
+                    <li>Ao obter softwares que, a princípio, são legítimos, acompanhe toda a instalação! Durante esse processo, o aplicativo pode deixar de maneira pré-marcada a ativação conjunta de outros programas, como barras para navegadores ou supostos aplicativos de segurança</li>
+                    <li>Evite acessar sites duvidosos</li>
+                    <li>Muito cuidado ao fazer compras na internet, somente o faça em sites de lojas com boa reputação. É sempre recomendável fazer uma pesquisa para descobrir se existem reclamações contra a empresa que você pretende adquirir o produto, recomendamos o site do Reclame Aqui </li>
+                </ul>
+                <ul>
+                    <li>Ao acessar sua conta bancária, sempre evite acesso em computadores ou redes Wi-Fi públicos. Não se esqueça de seguir todas as normas de segurança recomendadas pela instituição bancária</li>
+                    <li>Nunca revele informações importantes sobre você, principalmente em redes sociais, evite dar detalhes</li>
+                    <li>Seja cauteloso ao utilizar Wi-Fi público</li>
+                    <li>
+                        Sempre mantenha o sigilo de informações profissionais. Mantenha a informação sujeita a segredo profissional em local seguro. Utilize conta de correio eletrônico autônoma para as mensagens profissionais e outra conta distinta para fins privados. Não divulgue na Internet informação sujeita a segredo profissional, ou divulgue a terceiros sua senha.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- footer -->
+    <div class="wrapper-footer">
+        <div id="page-fale-conosco"></div>
+        <footer>
+            <h2><img src="@Url.Content("~/Content/img/logos/logo.png")" alt="e-fácilPlus"></h2>
+            <section class="contato">
+                <h2>Contato</h2>
+                <form id="SendMail" accept-charset="utf-8" autocomplete="on" enctype="multipart/form-data" id="contato" method="post">
+                    <p>Fale conosco:</p>
+                    <div>
+                        <input type="text" name="nome" placeholder="nome" required>
+                        <input type="tel" name="telefone" placeholder="telefone" required>
+                        <input type="email" name="email" placeholder="email" required>
+                        <input type="text" name="agencia" placeholder="agência">
+                    </div>
+                    <textarea name="mensagem" placeholder="mensagem"></textarea>
+                    <input type="submit" value="enviar">
+                </form>
+                <nav class="menu-footer">
+                    <h3>Mapa do site</h3>
+                    <hr>
+                    <ul>
+                        <li><a class="page-scroll" href="#page-quem-somos" title="Quem Somos">Quem Somos</a></li>
+                        <li><a class="page-scroll" href="#page-video-aulas" title="Vídeo Aulas">Vídeo Aulas</a></li>
+                        <li><a class="page-scroll" href="#page-portal" title="Portal">Portal</a></li>
+                        <li><a class="page-scroll" href="#page-app" title="App">App</a></li>
+                        <li><a class="page-scroll" href="#page-area-do-agente" title="Área do Agente">Área do Agente</a></li>
+                        <li><a class="page-scroll" href="#page-consolidadoras" title="Consolidadoras">Consolidadoras</a></li>
+                        <li><a class="page-scroll" href="#page-corporate" title="Corporate">Corporate</a></li>
+                        <li><a class="page-scroll" href="#page-seguranca" title="Segurança">Segurança</a></li>
+                    </ul>
+                </nav>
+                <div class="redes-sociais">
+                    <ul>
+                        <li>
+                            <a href="#" class="in" title="linkedin"></a>
+                            <a href="#" class="you" title="youtube"></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+        <div class="line-footer"></div>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#SendMail").submit(function (e) {
+            e.preventDefault();
+            var v_name = $('input[name=nome]').val();
+            var v_tel = $('input[name=telefone]').val();
+            var v_mail = $('input[name=email]').val();
+            var v_agencia = $('input[name=agencia]').val();
+            var v_msg = $('textarea[name=mensagem]').val();
+
+            $.ajax({
+                type: "POST",
+                url: "@Url.Content("~/Email/SendMail")",
+                dataType: "html",
+                data: { name: v_name, tel: v_tel, email: v_mail, agencia: v_agencia, msg: v_msg },
+                success: function (retorno) {
+                    alert('Mensagem encaminhada com sucesso!');
+                    $('input[name=nome]').val('')
+                    $('input[name=telefone]').val('')
+                    $('input[name=email]').val('')
+                    $('input[name=agencia]').val('')
+                    $('textarea[name=mensagem]').val('')
+                },
+                error: function (e) {
+                    alert('Ops! Ocorreu um erro ao enviar mensagem. Por Favor tente novamente!');
+                }
+            });
+        });
+    })
+</script>

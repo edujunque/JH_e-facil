@@ -1,0 +1,449 @@
+/* tablet */
+@media screen and (max-width: 800px) {
+    
+    /* header */
+    header {
+        max-width: 740px;
+    }
+    header .logo {
+        margin-left: 0;
+    }
+    header .area-de-clientes {
+        width: 450px;
+    }
+    header .area-de-clientes form input[type="text"],
+    header .area-de-clientes form select {
+        margin-right: 0;
+        width: 113px;
+    }
+    header .area-de-clientes a {
+        margin: 1px 0 0 118px;
+    }
+    
+    /* menu */
+    .menu {
+        max-width: 100%;
+        padding: 17px 0;
+    }
+    .menu ul li {
+        margin: 5px 0;
+    }
+    .menu ul li a {
+        font-size: 12px;
+        padding: 10px 9px;
+    }
+    
+    /* quem somos */
+    .quem-somos {        
+        height: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .quem-somos h2 {
+        margin: 50px 5% 50px 5%;
+    }
+    .quem-somos p {
+        margin: 0 5% 15px 5%;
+        max-width: 90%;
+    }
+    .quem-somos p:last-child {
+        margin-bottom: 60px;
+    }
+    
+    /* portal */
+    .portal {        
+        height: 100%;
+        max-width: 100%;
+    }
+    .portal h2 {
+        margin: 50px 5% 50px 5%;
+    }
+    .portal p {
+        display: block;
+        margin: 0 5% 0 5%;
+        max-width: 90%;
+        text-align: justify;
+    }
+    .portal ul {
+        margin: 0 0 0 465px;
+        width: 50%;
+    }
+    
+    /* area do agente */
+    .area-do-agente {        
+        height: 100%;
+        max-width: 100%;
+    }
+    .area-do-agente h2 {
+        margin: 50px 5% 50px 5%;
+    }
+    .area-do-agente p {
+        display: block;
+        margin: 0 5% 0 5%;
+        max-width: 90%;
+        text-align: justify;
+    }
+    .area-do-agente ul {
+        margin: 0 0 0 5%;
+        width: 50%;
+    }
+    .area-do-agente .video-legenda {
+        margin-top: -100px;
+    }
+    
+    /* corporate */
+    .corporate {        
+        height: 100%;
+        max-width: 100%;
+    }
+    .corporate h2 {
+        margin: 50px 5% 50px 5%;
+    }
+    .corporate p {
+        display: block;
+        margin: 0 5% 0 5%;
+        max-width: 90%;
+        text-align: justify;
+    }
+    .corporate ul {
+        margin: 0 0 0 5%;
+        width: 90%;
+    }
+    .corporate ul li {
+        width: 100%;
+    }
+    
+    /* video aulas */
+    .video-aulas {        
+        height: 100%;
+        max-width: 100%;
+    }
+    .video-aulas h2 {
+        margin: 50px 5% 50px 5%;
+    }
+    .video-aulas p {
+        display: block;
+        margin: 0 5% 0 5%;
+        max-width: 90%;
+        text-align: justify;
+        width: 90%;
+    }
+    .video-aulas ul {
+        margin: 0 0 0 5%;
+        width: 38%;
+    }
+    .video-aulas iframe {
+        margin-top: 0;
+    }
+    
+    /* consolidadoras */
+    .consolidadoras {        
+        height: 100%;
+        max-width: 100%;
+    }
+    .consolidadoras div {
+        height: 100%;
+        margin: 5%;
+        width: 90%;
+    }
+    .consolidadoras div a {
+        bottom: auto;
+        position: static;
+    }
+    
+    /* seguranca */
+    .seguranca h2 {
+        margin: 50px 5% 50px 5%;
+    }
+    .seguranca p {
+        margin: 0 0 60px 5%;
+        max-width: 90%;   
+    }
+    .seguranca .cadeado {
+        height: auto;
+        margin: 0 0 0 5%;
+        width: 90%;   
+    }
+    .seguranca .recomendacoes {
+        margin-top: 50px;
+        width: 90%;
+    }
+    
+    /* footer */
+    footer {
+        width: 95%;
+    }
+
+}
+/* mobile */
+@media screen and (max-width: 767px) {
+    
+    /* header */
+    header {
+        max-width: 90%;
+    }
+    header .logo img {
+        width: 80%;
+    }
+    header .area-de-clientes {
+        max-height: 300px;
+        padding: 0 20px;
+        top: 80px;
+        width: calc(100% - 40px);
+    }
+    header .area-de-clientes h3 {
+        margin: 15px 0 15px 0;
+        text-align: center;
+    }
+    header .area-de-clientes form input[type="text"],
+    header .area-de-clientes form select {
+        display: block;
+        font-size: 13px;
+        margin: 0 auto 10px;
+        padding: 10px 15px;
+        width: 78%;
+    }
+    header .area-de-clientes form select {
+        width: 78%;
+    }
+    header .area-de-clientes form input[type="submit"] {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 15px;
+        width: 78%;
+    }
+    header .area-de-clientes a {
+        font-size: 10px;
+        margin: 10px auto;
+    }
+    header .menu-mobile {
+        align-self: flex-end;
+        display: block;
+        margin-top: 22px;
+        z-index: 2;
+    }
+    header .menu-mobile i {
+        color: #fff;
+        height: 100%;
+        text-align: center;
+        width: 100%;
+    }
+    header .ac-mobile {
+        align-self: flex-end;
+        display: block;
+        margin-top: 22px;
+        z-index: 2;
+    }
+    header .ac-mobile i {
+        color: #fff;
+        height: 100%;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* menu */
+    .menu {
+        margin: 0;
+        max-width: 100%;
+        padding: 0;
+    }
+    .menu ul li {
+        display: block;
+        margin-right: 0;
+    }
+    .menu ul li:hover {
+        background: #ad1e26;
+    }
+    .menu ul li a {
+        display: block;
+        font-size: 14px;
+        padding: 6px 0 7px 0;
+        text-align: center;
+        width: 100%;
+    }
+    #page-header,
+    #page-quem-somos,
+    #page-portal,
+    #page-area-do-agente,
+    #page-corporate,
+    #page-video-aulas,
+    #page-app,
+    #page-consolidadoras,
+    #page-seguranca,
+    #page-fale-conosco {
+        margin-top: -80px;
+    }
+    
+    /* slider */
+    .bx-wrapper {
+        margin-bottom: 78px;
+        top: 79px;
+    }    
+    
+    /* portal */
+    .wrapper-portal {
+        background-size: contain;
+    }
+    .portal h2 {
+        margin: 50px 15% 35px 5%;
+        width: 80%;
+    }
+    .portal h2 img {
+        width: 80%;
+    }
+    .portal ul {
+        margin: 50px 5% 90% 5%;
+        width: 90%;
+    }
+    .portal ul li {
+        float: none;
+        margin: 0 auto 34px;
+    }
+    
+    /* area do agente */
+    .area-do-agente h2 {
+        margin: 50px 15% 35px 5%;
+        width: 80%;
+    }
+    .area-do-agente h2 img {
+        width: 80%;
+    }
+    .area-do-agente p {
+        margin: 10px 5% 30px 5%;
+    }
+    .area-do-agente ul {
+        margin: 10% 5% 0 5%;
+        width: 90%;
+    }
+    .area-do-agente ul li {
+        float: none;
+        margin: 0 auto 34px;
+    }
+    .area-do-agente iframe {
+        background: #900;
+        margin: 0 auto;
+    }
+    .area-do-agente .video-legenda {
+        margin: 0 0 50px 0;
+        text-align: center;
+    }
+    
+    /* corporate */
+    .wrapper-corporate {
+        background-position: center bottom;
+    }
+    .corporate h2 {
+        margin: 50px 15% 35px 5%;
+        width: 80%;
+    }
+    .corporate h2 img {
+        width: 80%;
+    }
+    .corporate p {
+        margin: 10px 5% 30px 5%;
+    }
+    .corporate ul {
+        margin: 10% 5% 0 5%;
+        width: 90%;
+    }
+    .corporate ul li {
+        float: none;
+        margin: 0 auto 34px;
+        width: 90%;
+    }
+    
+    /* video aulas */
+    .video-aulas h2 {
+        margin: 50px 15% 35px 5%;
+        width: 80%;
+    }
+    .video-aulas h2 img {
+        width: 80%;
+    }
+    .video-aulas iframe {
+        margin: 0 0 50px 5%;
+        width: 90%
+    }
+    
+    /* app */
+    .wrapper-app {
+        background-position: -340px 0;
+    }
+    .app h2,
+    .app p,
+    .app .store {
+        margin-left: 5%;
+    }
+    .app h2 {
+        margin: 50px 15% 35px 5%;
+        width: 80%;
+    }
+    .app h2 img {
+        width: 50%;
+    }
+    .app p {
+        margin-left: 5%;
+        width: 50%;
+    }
+    
+    /* seguranca */
+    .seguranca h2 {
+        margin: 50px 5% 50px 5%;
+    }
+    .seguranca h2 img {
+        width: 80%;
+    }
+    .seguranca p {
+        margin: 0 0 60px 5%;
+        max-width: 90%;   
+    }
+    .seguranca .cadeado {
+        margin: 0 0 0 5%;
+        width: 90%;   
+    }    
+    .seguranca .recomendacoes {
+        width: 90%;
+    }
+    .seguranca .recomendacoes ul {
+    margin-top: 75px;
+    width: 90%;
+}
+    
+    /* footer */
+    .wrapper-footer {
+        background-size: initial;
+    }
+    footer h2 {
+        margin-top: 50px;
+        text-align: center;
+    }
+    footer .contato {
+        flex-direction: column;
+    }
+    footer .contato form,
+    footer .contato .menu-footer,
+    footer .contato .redes-sociais {
+        margin: 14px auto 0;
+    }
+    footer .contato form {
+        width: 300px;
+    }
+    footer .contato form textarea {
+        width: 163px;
+    }
+    footer .contato form input[type=submit] {
+        margin-right: -169px;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    
+    /* app */
+    .app h2 img {
+        width: 80%;
+    }
+    .app p {
+        width: 75%;
+    }
+
+}
